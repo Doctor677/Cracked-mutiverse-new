@@ -33,7 +33,7 @@
     },
     "igniterName": "Galifray Portal Igniter",
     "igniterTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Crakedmultiverse"
     },
     "texture": "igniter_galifray",
     "portalTexture": "portal_galifray",

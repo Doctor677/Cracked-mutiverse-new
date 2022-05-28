@@ -8,18 +8,18 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 
 import net.mcreator.multiverse.world.dimension.GalifrayDimension;
+import net.mcreator.multiverse.itemgroup.CrakedmultiverseItemGroup;
 
 public class GalifrayItem extends Item {
 	@ObjectHolder("multiverse:galifray")
 	public static final Item block = null;
 
 	public GalifrayItem() {
-		super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(64));
+		super(new Item.Properties().group(CrakedmultiverseItemGroup.tab).maxDamage(64));
 	}
 
 	@Override
