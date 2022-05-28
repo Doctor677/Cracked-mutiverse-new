@@ -3,13 +3,13 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "crystal_helmet",
+    "textureHelmet": "crystal_armour_head",
     "enableBody": true,
-    "textureBody": "crystal_chestplate",
+    "textureBody": "crystal_armour_body",
     "enableLeggings": true,
-    "textureLeggings": "crystal_leggings",
+    "textureLeggings": "crystal_armour_leggings",
     "enableBoots": true,
-    "textureBoots": "crystal_boots",
+    "textureBoots": "crystal_armour_boots",
     "creativeTab": {
       "value": "CUSTOM:Crakedmultiverse"
     },

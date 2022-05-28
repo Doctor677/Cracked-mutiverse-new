@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "multiverse:items/crystal_chestplate"
+    "layer0": "multiverse:items/crystal_armour_body"
   }
 }
