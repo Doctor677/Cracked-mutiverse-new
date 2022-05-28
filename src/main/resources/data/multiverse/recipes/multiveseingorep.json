@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 10,
+  "cookingtime": 600,
+  "ingredient": {
+    "item": "multiverse:multiverse_fragment"
+  },
+  "result": {
+    "item": "multiverse:multiverseingot"
+  }
+}

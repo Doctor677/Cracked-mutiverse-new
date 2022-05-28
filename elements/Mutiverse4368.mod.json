@@ -1,0 +1,52 @@
+{
+  "_fv": 28,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "badlands"
+      },
+      {
+        "value": "CUSTOM:Universe4368"
+      },
+      {
+        "value": "CUSTOM:Universe43682"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.MAGMA"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_LAVA"
+    },
+    "airColor": {
+      "value": -3381760,
+      "falpha": 0.0
+    },
+    "canRespawnHere": true,
+    "hasFog": true,
+    "isDark": false,
+    "doesWaterVaporize": true,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true,
+    "portalFrame": {
+      "value": "CUSTOM:Multivere4368portalblock"
+    },
+    "portalParticles": {
+      "value": "SMOKE_LARGE"
+    },
+    "portalLuminance": 5,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Mutiverse 4368 activator",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "lightter4368",
+    "portalTexture": "poartal4368",
+    "enablePortal": true
+  }
+}

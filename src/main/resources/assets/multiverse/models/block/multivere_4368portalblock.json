@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "multiverse:blocks/multiverse4368block",
+    "up": "multiverse:blocks/multiverse4368block",
+    "north": "multiverse:blocks/multiverse4368block",
+    "east": "multiverse:blocks/multiverse4368block",
+    "south": "multiverse:blocks/multiverse4368block",
+    "west": "multiverse:blocks/multiverse4368block",
+    "particle": "multiverse:blocks/multiverse4368block"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "multiverse:multiverseingot"
+    },
+    "1": {
+      "item": "multiverse:multiverseingot"
+    },
+    "2": {
+      "item": "multiverse:multiverseingot"
+    },
+    "3": {
+      "item": "multiverse:multiverseingot"
+    },
+    "5": {
+      "item": "multiverse:multiverseingot"
+    }
+  },
+  "result": {
+    "item": "multiverse:crystalarmour_helmet",
+    "count": 1
+  }
+}

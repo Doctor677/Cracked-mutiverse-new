@@ -1,0 +1,221 @@
+{
+  "mod_elements": [
+    {
+      "name": "Multiverseblock",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "multiverseblock"
+    },
+    {
+      "name": "Mutiverse4368",
+      "type": "dimension",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mutiverse_4368",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "Universe4368",
+      "type": "biome",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "universe_4368"
+    },
+    {
+      "name": "Multivere4368portalblock",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "multivere_4368portalblock"
+    },
+    {
+      "name": "Corrputedplayer",
+      "type": "livingentity",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corrputedplayer"
+    },
+    {
+      "name": "Crakedmultiverse",
+      "type": "tab",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crakedmultiverse"
+    },
+    {
+      "name": "Multiverseblockrep",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "multiverseblockrep"
+    },
+    {
+      "name": "MultiverseFragment",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "multiverse_fragment"
+    },
+    {
+      "name": "Multiverseingot",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "multiverseingot"
+    },
+    {
+      "name": "Multiveseingorep",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "multiveseingorep"
+    },
+    {
+      "name": "Universe43682",
+      "type": "biome",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "universe_43682"
+    },
+    {
+      "name": "Crystalarmour",
+      "type": "armor",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystalarmour",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Crystalamourcraft",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystalamourcraft"
+    },
+    {
+      "name": "Crystalarmourcrafthelm",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystalarmourcrafthelm"
+    },
+    {
+      "name": "Acrystalarmourleg",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acrystalarmourleg"
+    },
+    {
+      "name": "Crystalamourfeet",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystalamourfeet"
+    },
+    {
+      "name": "Inginterrep",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inginterrep"
+    },
+    {
+      "name": "Galifraybiome",
+      "type": "biome",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galifraybiome"
+    },
+    {
+      "name": "Galifray",
+      "type": "dimension",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "galifray",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "City",
+      "type": "structure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "city"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.multiverse.mutiverse_4368": "Mutiverse 4368 activator",
+      "block.multiverse.multiverse_fragment": "Multiverse Fragment",
+      "item.multiverse.crystalarmour_leggings": "Crystalarmour Leggings",
+      "item.multiverse.crystalarmour_chestplate": "Crystalarmour Body",
+      "item.multiverse.galifray": "Galifray Portal Igniter",
+      "biome.multiverse.galifraybiome": "Galifraybiome",
+      "item.multiverse.multiverseingot": "Mysterious Crystal",
+      "item.multiverse.crystalarmour_boots": "Crystalarmour Boots",
+      "item.multiverse.corrputedplayer_spawn_egg": "Corrputed player Spawn Egg",
+      "block.multiverse.multiverseblock": "Multiverse breaker",
+      "itemGroup.tabcrakedmultiverse": "Crakedmultiverse",
+      "item.multiverse.crystalarmour_helmet": "Crystalarmour Helmet",
+      "entity.multiverse.corrputedplayer": "Corrputed player",
+      "biome.multiverse.universe_4368": "Universe 4368",
+      "biome.multiverse.universe_43682": "Universe 4 3 6 8 2",
+      "block.multiverse.multivere_4368portalblock": "Strange matter"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "multiverse",
+    "modName": "Cracked multiverse",
+    "version": "1.0.0",
+    "author": "Doctor677",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.multiverse",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200120510
+}

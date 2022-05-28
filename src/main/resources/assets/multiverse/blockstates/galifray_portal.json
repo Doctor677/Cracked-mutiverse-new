@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "multiverse:block/galifray_portal_ew"
+    },
+    "axis=x": {
+      "model": "multiverse:block/galifray_portal_ns"
+    }
+  }
+}

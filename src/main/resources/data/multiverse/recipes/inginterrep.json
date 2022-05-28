@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:magma_block"
+    },
+    "3": {
+      "item": "minecraft:redstone"
+    },
+    "4": {
+      "item": "multiverse:multivere_4368portalblock"
+    },
+    "5": {
+      "item": "minecraft:redstone"
+    },
+    "7": {
+      "item": "minecraft:repeater"
+    }
+  },
+  "result": {
+    "item": "multiverse:mutiverse_4368",
+    "count": 1
+  }
+}

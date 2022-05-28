@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "multiverse:blocks/multiverse_breaker_bottom",
+    "up": "multiverse:blocks/muliverse_breaker_top",
+    "north": "multiverse:blocks/multiverse_breaker_sides",
+    "east": "multiverse:blocks/multiverse_breaker_sides",
+    "south": "multiverse:blocks/multiverse_breaker_sides",
+    "west": "multiverse:blocks/multiverse_breaker_sides",
+    "particle": "multiverse:blocks/multiverse_breaker_bottom"
+  }
+}
