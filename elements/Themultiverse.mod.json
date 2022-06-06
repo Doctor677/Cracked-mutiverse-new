@@ -4,7 +4,28 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:Galifraybiome"
+        "value": "badlands"
+      },
+      {
+        "value": "badlands_plateau"
+      },
+      {
+        "value": "bamboo_jungle"
+      },
+      {
+        "value": "bamboo_jungle_hills"
+      },
+      {
+        "value": "beaches"
+      },
+      {
+        "value": "birch_forest"
+      },
+      {
+        "value": "birch_forest_hills"
+      },
+      {
+        "value": "cold_ocean"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -15,28 +36,28 @@
       "value": "Blocks.FLOWING_WATER"
     },
     "canRespawnHere": true,
-    "hasFog": true,
+    "hasFog": false,
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
     "hasSkyLight": true,
     "imitateOverworldBehaviour": true,
     "portalFrame": {
-      "value": "Blocks.SMOOTH_RED_SANDSTONE"
+      "value": "CUSTOM:Multiverseblock"
     },
     "portalParticles": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "WATER_SPLASH"
     },
-    "portalLuminance": 3,
+    "portalLuminance": 0,
     "portalSound": {
       "value": "block.portal.ambient"
     },
-    "igniterName": "Galifray Portal Igniter",
+    "igniterName": "Themultiverse Portal Igniter",
     "igniterTab": {
       "value": "CUSTOM:Crakedmultiverse"
     },
-    "texture": "igniter_galifray",
-    "portalTexture": "portal_galifray",
+    "texture": "igniter",
+    "portalTexture": "portal",
     "enablePortal": true
   }
 }

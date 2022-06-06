@@ -59,17 +59,17 @@ public class GalifraybiomeBiome extends MultiverseModElements.ModElement {
 		@SubscribeEvent
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
-				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-6750208).setWaterColor(-10066330).setWaterFogColor(-3355444)
-						.withSkyColor(-6750208).withFoliageColor(-6710887).withGrassColor(-10092544).build();
+				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-6710887).setWaterColor(-10066330).setWaterFogColor(-3355444)
+						.withSkyColor(-6710887).withFoliageColor(-6710887).withGrassColor(-6750208).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.RED_SAND.getDefaultState(),
+						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
 								Blocks.STONE.getDefaultState(), Blocks.RED_SAND.getDefaultState())));
 				biomeGenerationSettings
 						.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 								Feature.TREE
 										.withConfiguration(
 												(new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.ACACIA_LOG.getDefaultState()),
-														new SimpleBlockStateProvider(Blocks.ACACIA_WOOD.getDefaultState()),
+														new SimpleBlockStateProvider(Blocks.OAK_LEAVES.getDefaultState()),
 														new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
 														new StraightTrunkPlacer(7, 2, 0), new TwoLayerFeature(1, 0, 1)))
 														.setDecorators(ImmutableList.of(
@@ -88,12 +88,12 @@ public class GalifraybiomeBiome extends MultiverseModElements.ModElement {
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.DISK
 								.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), FeatureSpread.func_242253_a(2, 4), 2,
-										ImmutableList.of(Blocks.RED_SAND.getDefaultState(), Blocks.STONE.getDefaultState())))
+										ImmutableList.of(Blocks.GRASS_BLOCK.getDefaultState(), Blocks.STONE.getDefaultState())))
 								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(2));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.DISK
 								.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), FeatureSpread.func_242253_a(2, 3), 2,
-										ImmutableList.of(Blocks.RED_SAND.getDefaultState(), Blocks.STONE.getDefaultState())))
+										ImmutableList.of(Blocks.GRASS_BLOCK.getDefaultState(), Blocks.STONE.getDefaultState())))
 								.withPlacement(Features.Placements.SEAGRASS_DISK_PLACEMENT).func_242731_b(4));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.RANDOM_PATCH.withConfiguration(

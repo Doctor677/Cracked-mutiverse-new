@@ -8,6 +8,8 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.gen.feature.template.RuleTest;
 import net.minecraft.world.gen.feature.template.IRuleTestType;
@@ -25,10 +27,14 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.loot.LootContext;
+import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.Minecraft;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.Blocks;
@@ -43,12 +49,12 @@ import java.util.List;
 import java.util.Collections;
 
 @MultiverseModElements.ModElement.Tag
-public class MultiverseFragmentBlock extends MultiverseModElements.ModElement {
-	@ObjectHolder("multiverse:multiverse_fragment")
+public class NetherightoreblockBlock extends MultiverseModElements.ModElement {
+	@ObjectHolder("multiverse:netherightoreblock")
 	public static final Block block = null;
 
-	public MultiverseFragmentBlock(MultiverseModElements instance) {
-		super(instance, 8);
+	public NetherightoreblockBlock(MultiverseModElements instance) {
+		super(instance, 19);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -62,10 +68,9 @@ public class MultiverseFragmentBlock extends MultiverseModElements.ModElement {
 
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(4f, 10f).setLightLevel(s -> 0).harvestLevel(1)
-					.harvestTool(ToolType.PICKAXE).setRequiresTool().setNeedsPostProcessing((bs, br, bp) -> true)
-					.setEmmisiveRendering((bs, br, bp) -> true));
-			setRegistryName("multiverse_fragment");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.ANCIENT_DEBRIS).hardnessAndResistance(20f, 10f).setLightLevel(s -> 0)
+					.harvestLevel(1).harvestTool(ToolType.PICKAXE).setRequiresTool());
+			setRegistryName("netherightoreblock");
 		}
 
 		@Override
@@ -78,7 +83,28 @@ public class MultiverseFragmentBlock extends MultiverseModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(Items.NETHERITE_SCRAP, (int) (3)));
+		}
+
+		@OnlyIn(Dist.CLIENT)
+		@Override
+		public void animateTick(BlockState blockstate, World world, BlockPos pos, Random random) {
+			super.animateTick(blockstate, world, pos, random);
+			PlayerEntity entity = Minecraft.getInstance().player;
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			if (true)
+				for (int l = 0; l < 4; ++l) {
+					double d0 = (x + random.nextFloat());
+					double d1 = (y + random.nextFloat());
+					double d2 = (z + random.nextFloat());
+					int i1 = random.nextInt(2) * 2 - 1;
+					double d3 = (random.nextFloat() - 0.5D) * 0.5D;
+					double d4 = (random.nextFloat() - 0.5D) * 0.5D;
+					double d5 = (random.nextFloat() - 0.5D) * 0.5D;
+					world.addParticle(ParticleTypes.LAVA, d0, d1, d2, d3, d4, d5);
+				}
 		}
 	}
 
@@ -105,19 +131,13 @@ public class MultiverseFragmentBlock extends MultiverseModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("multiverse:multiverse_fragment_match"),
+			CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("multiverse:netherightoreblock_match"),
 					() -> CustomRuleTest.codec);
 			feature = new OreFeature(OreFeatureConfig.CODEC) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
 					boolean dimensionCriteria = false;
-					if (dimensionType == World.OVERWORLD)
-						dimensionCriteria = true;
-					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("multiverse:mutiverse_4368")))
-						dimensionCriteria = true;
-					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("multiverse:galifray")))
-						dimensionCriteria = true;
 					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("multiverse:themultiverse")))
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
@@ -125,10 +145,10 @@ public class MultiverseFragmentBlock extends MultiverseModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 5)).range(20)
-					.square().func_242731_b(10);
-			event.getRegistry().register(feature.setRegistryName("multiverse_fragment"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("multiverse:multiverse_fragment"), configuredFeature);
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 3)).range(16)
+					.square().func_242731_b(1);
+			event.getRegistry().register(feature.setRegistryName("netherightoreblock"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("multiverse:netherightoreblock"), configuredFeature);
 		}
 	}
 

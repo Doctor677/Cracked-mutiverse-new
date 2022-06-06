@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "multiverse:block/themultiverse_portal_ew"
+    },
+    "axis=x": {
+      "model": "multiverse:block/themultiverse_portal_ns"
+    }
+  }
+}

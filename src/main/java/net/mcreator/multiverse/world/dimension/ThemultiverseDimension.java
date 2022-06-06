@@ -53,7 +53,8 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 import net.minecraft.block.AbstractBlock;
 
-import net.mcreator.multiverse.item.GalifrayItem;
+import net.mcreator.multiverse.item.ThemultiverseItem;
+import net.mcreator.multiverse.block.MultiverseblockBlock;
 import net.mcreator.multiverse.MultiverseModElements;
 
 import javax.annotation.Nullable;
@@ -72,12 +73,12 @@ import com.google.common.collect.Sets;
 import com.google.common.collect.ImmutableSet;
 
 @MultiverseModElements.ModElement.Tag
-public class GalifrayDimension extends MultiverseModElements.ModElement {
-	@ObjectHolder("multiverse:galifray_portal")
+public class ThemultiverseDimension extends MultiverseModElements.ModElement {
+	@ObjectHolder("multiverse:themultiverse_portal")
 	public static final CustomPortalBlock portal = null;
 
-	public GalifrayDimension(MultiverseModElements instance) {
-		super(instance, 17);
+	public ThemultiverseDimension(MultiverseModElements instance) {
+		super(instance, 18);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new POIRegisterHandler());
 	}
 
@@ -85,10 +86,38 @@ public class GalifrayDimension extends MultiverseModElements.ModElement {
 	public void init(FMLCommonSetupEvent event) {
 		Set<Block> replaceableBlocks = new HashSet<>();
 		replaceableBlocks.add(Blocks.STONE);
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("multiverse:galifraybiome")).getGenerationSettings()
-				.getSurfaceBuilder().get().getConfig().getTop().getBlock());
-		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("multiverse:galifraybiome")).getGenerationSettings()
-				.getSurfaceBuilder().get().getConfig().getUnder().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("badlands")).getGenerationSettings().getSurfaceBuilder().get()
+				.getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("badlands")).getGenerationSettings().getSurfaceBuilder().get()
+				.getConfig().getUnder().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("bamboo_jungle")).getGenerationSettings().getSurfaceBuilder().get()
+				.getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("bamboo_jungle")).getGenerationSettings().getSurfaceBuilder().get()
+				.getConfig().getUnder().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("bamboo_jungle_hills")).getGenerationSettings().getSurfaceBuilder()
+				.get().getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("bamboo_jungle_hills")).getGenerationSettings().getSurfaceBuilder()
+				.get().getConfig().getUnder().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("badlands_plateau")).getGenerationSettings().getSurfaceBuilder()
+				.get().getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("badlands_plateau")).getGenerationSettings().getSurfaceBuilder()
+				.get().getConfig().getUnder().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("beach")).getGenerationSettings().getSurfaceBuilder().get()
+				.getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("beach")).getGenerationSettings().getSurfaceBuilder().get()
+				.getConfig().getUnder().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("birch_forest")).getGenerationSettings().getSurfaceBuilder().get()
+				.getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("birch_forest")).getGenerationSettings().getSurfaceBuilder().get()
+				.getConfig().getUnder().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("cold_ocean")).getGenerationSettings().getSurfaceBuilder().get()
+				.getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("cold_ocean")).getGenerationSettings().getSurfaceBuilder().get()
+				.getConfig().getUnder().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("birch_forest_hills")).getGenerationSettings().getSurfaceBuilder()
+				.get().getConfig().getTop().getBlock());
+		replaceableBlocks.add(ForgeRegistries.BIOMES.getValue(new ResourceLocation("birch_forest_hills")).getGenerationSettings().getSurfaceBuilder()
+				.get().getConfig().getUnder().getBlock());
 		DeferredWorkQueue.runLater(() -> {
 			try {
 				ObfuscationReflectionHelper.setPrivateValue(WorldCarver.class, WorldCarver.CAVE, new ImmutableSet.Builder<Block>()
@@ -114,14 +143,14 @@ public class GalifrayDimension extends MultiverseModElements.ModElement {
 
 			@Override
 			public boolean func_230493_a_(int x, int y) {
-				return true;
+				return false;
 			}
 		};
 		DeferredWorkQueue.runLater(() -> {
 			try {
 				Object2ObjectMap<ResourceLocation, DimensionRenderInfo> effectsRegistry = (Object2ObjectMap<ResourceLocation, DimensionRenderInfo>) ObfuscationReflectionHelper
 						.getPrivateValue(DimensionRenderInfo.class, null, "field_239208_a_");
-				effectsRegistry.put(new ResourceLocation("multiverse:galifray"), customEffect);
+				effectsRegistry.put(new ResourceLocation("multiverse:themultiverse"), customEffect);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -130,13 +159,13 @@ public class GalifrayDimension extends MultiverseModElements.ModElement {
 	}
 
 	private static PointOfInterestType poi = null;
-	public static final TicketType<BlockPos> CUSTOM_PORTAL = TicketType.create("galifray_portal", Vector3i::compareTo, 300);
+	public static final TicketType<BlockPos> CUSTOM_PORTAL = TicketType.create("themultiverse_portal", Vector3i::compareTo, 300);
 
 	public static class POIRegisterHandler {
 		@SubscribeEvent
 		public void registerPointOfInterest(RegistryEvent.Register<PointOfInterestType> event) {
-			poi = new PointOfInterestType("galifray_portal", Sets.newHashSet(ImmutableSet.copyOf(portal.getStateContainer().getValidStates())), 0, 1)
-					.setRegistryName("galifray_portal");
+			poi = new PointOfInterestType("themultiverse_portal", Sets.newHashSet(ImmutableSet.copyOf(portal.getStateContainer().getValidStates())),
+					0, 1).setRegistryName("themultiverse_portal");
 			ForgeRegistries.POI_TYPES.register(poi);
 		}
 	}
@@ -144,14 +173,14 @@ public class GalifrayDimension extends MultiverseModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomPortalBlock());
-		elements.items.add(() -> new GalifrayItem().setRegistryName("galifray"));
+		elements.items.add(() -> new ThemultiverseItem().setRegistryName("themultiverse"));
 	}
 
 	public static class CustomPortalBlock extends NetherPortalBlock {
 		public CustomPortalBlock() {
 			super(Block.Properties.create(Material.PORTAL).doesNotBlockMovement().tickRandomly().hardnessAndResistance(-1.0F).sound(SoundType.GLASS)
-					.setLightLevel(s -> 3).noDrops());
-			setRegistryName("galifray_portal");
+					.setLightLevel(s -> 0).noDrops());
+			setRegistryName("themultiverse_portal");
 		}
 
 		@Override
@@ -200,7 +229,7 @@ public class GalifrayDimension extends MultiverseModElements.ModElement {
 					pz = pos.getZ() + 0.5 + 0.25 * j;
 					vz = random.nextFloat() * 2 * j;
 				}
-				world.addParticle(ParticleTypes.EXPLOSION, px, py, pz, vx, vy, vz);
+				world.addParticle(ParticleTypes.SPLASH, px, py, pz, vx, vy, vz);
 			}
 			if (random.nextInt(110) == 0)
 				world.playSound(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
@@ -214,9 +243,10 @@ public class GalifrayDimension extends MultiverseModElements.ModElement {
 				if (entity.func_242280_ah()) {
 					entity.func_242279_ag();
 				} else if (entity.world.getDimensionKey() != RegistryKey.getOrCreateKey(Registry.WORLD_KEY,
-						new ResourceLocation("multiverse:galifray"))) {
+						new ResourceLocation("multiverse:themultiverse"))) {
 					entity.func_242279_ag();
-					teleportToDimension(entity, pos, RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("multiverse:galifray")));
+					teleportToDimension(entity, pos,
+							RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("multiverse:themultiverse")));
 				} else {
 					entity.func_242279_ag();
 					teleportToDimension(entity, pos, World.OVERWORLD);
@@ -232,7 +262,7 @@ public class GalifrayDimension extends MultiverseModElements.ModElement {
 
 	public static class CustomPortalSize {
 		private static final AbstractBlock.IPositionPredicate POSITION_PREDICATE = (state, blockReader, pos) -> {
-			return state.getBlock() == Blocks.SMOOTH_RED_SANDSTONE;
+			return state.getBlock() == MultiverseblockBlock.block;
 		};
 		private final IWorld world;
 		private final Direction.Axis axis;
@@ -504,7 +534,7 @@ public class GalifrayDimension extends MultiverseModElements.ModElement {
 				for (int l1 = -1; l1 < 2; ++l1) {
 					for (int k2 = 0; k2 < 2; ++k2) {
 						for (int i3 = -1; i3 < 3; ++i3) {
-							BlockState blockstate1 = i3 < 0 ? Blocks.SMOOTH_RED_SANDSTONE.getDefaultState() : Blocks.AIR.getDefaultState();
+							BlockState blockstate1 = i3 < 0 ? MultiverseblockBlock.block.getDefaultState() : Blocks.AIR.getDefaultState();
 							blockpos$mutable.setAndOffset(blockpos, k2 * direction.getXOffset() + l1 * direction1.getXOffset(), i3,
 									k2 * direction.getZOffset() + l1 * direction1.getZOffset());
 							this.world.setBlockState(blockpos$mutable, blockstate1);
@@ -516,7 +546,7 @@ public class GalifrayDimension extends MultiverseModElements.ModElement {
 				for (int i2 = -1; i2 < 4; ++i2) {
 					if (k1 == -1 || k1 == 2 || i2 == -1 || i2 == 3) {
 						blockpos$mutable.setAndOffset(blockpos, k1 * direction.getXOffset(), i2, k1 * direction.getZOffset());
-						this.world.setBlockState(blockpos$mutable, Blocks.SMOOTH_RED_SANDSTONE.getDefaultState(), 3);
+						this.world.setBlockState(blockpos$mutable, MultiverseblockBlock.block.getDefaultState(), 3);
 					}
 				}
 			}

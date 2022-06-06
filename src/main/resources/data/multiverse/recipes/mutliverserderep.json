@@ -19,7 +19,7 @@
       "item": "minecraft:gray_concrete"
     },
     "4": {
-      "item": "multiverse:mutiverse_4368"
+      "item": "multiverse:multiverseingot"
     },
     "5": {
       "item": "minecraft:gray_concrete"
@@ -36,6 +36,6 @@
   },
   "result": {
     "item": "multiverse:multiverseblock",
-    "count": 1
+    "count": 4
   }
 }

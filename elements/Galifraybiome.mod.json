@@ -4,7 +4,7 @@
   "definition": {
     "name": "Galifraybiome",
     "groundBlock": {
-      "value": "Blocks.SAND#1"
+      "value": "Blocks.GRASS"
     },
     "undergroundBlock": {
       "value": "Blocks.STONE#0"
@@ -13,11 +13,11 @@
       "value": "Blocks.SAND#1"
     },
     "airColor": {
-      "value": -6750208,
+      "value": -6710887,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -10092544,
+      "value": -6750208,
       "falpha": 0.0
     },
     "foliageColor": {
@@ -77,7 +77,7 @@
       "value": "Blocks.LOG2#0"
     },
     "treeBranch": {
-      "value": "Blocks.ACACIA_WOOD"
+      "value": "Blocks.LEAVES#0"
     },
     "treeVines": {
       "value": ""

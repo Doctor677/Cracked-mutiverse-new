@@ -2,16 +2,16 @@
   "_fv": 28,
   "_type": "block",
   "definition": {
-    "texture": "multiversefragment",
-    "textureTop": "multiversefragment",
-    "textureLeft": "multiversefragment",
-    "textureFront": "multiversefragment",
-    "textureRight": "multiversefragment",
-    "textureBack": "multiversefragment",
+    "texture": "nehteright_ore",
+    "textureTop": "nehteright_ore",
+    "textureLeft": "nehteright_ore",
+    "textureFront": "nehteright_ore",
+    "textureRight": "nehteright_ore",
+    "textureBack": "nehteright_ore",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
@@ -32,9 +32,9 @@
         "subtract": false
       }
     ],
-    "name": "Multiverse Fragment",
+    "name": "netherite ore",
     "specialInfo": [],
-    "hardness": 4.0,
+    "hardness": 20.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -43,9 +43,9 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "Items.NETHERITE_SCRAP"
     },
-    "dropAmount": 1,
+    "dropAmount": 3,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -77,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "ANCIENT_DEBRIS"
     },
     "breakSound": {
       "value": ""
@@ -97,9 +97,9 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "LAVA"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
@@ -122,9 +122,6 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "spawnWorldTypes": [
-      "Surface",
-      "CUSTOM:Mutiverse4368",
-      "CUSTOM:Galifray",
       "CUSTOM:Themultiverse"
     ],
     "restrictionBiomes": [],
@@ -134,9 +131,9 @@
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 5,
-    "minGenerateHeight": 14,
-    "maxGenerateHeight": 20
+    "frequencyPerChunks": 1,
+    "frequencyOnChunk": 3,
+    "minGenerateHeight": 3,
+    "maxGenerateHeight": 16
   }
 }

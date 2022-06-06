@@ -10,9 +10,11 @@
   "item.multiverse.corrputedplayer_spawn_egg": "Corrputed player Spawn Egg",
   "block.multiverse.multiverseblock": "Multiverse breaker",
   "itemGroup.tabcrakedmultiverse": "Crakedmultiverse",
+  "block.multiverse.netherightoreblock": "netherite ore",
   "item.multiverse.crystalarmour_helmet": "Crystalarmour Helmet",
   "entity.multiverse.corrputedplayer": "Corrputed player",
   "biome.multiverse.universe_4368": "Universe 4368",
   "biome.multiverse.universe_43682": "Universe 4 3 6 8 2",
-  "block.multiverse.multivere_4368portalblock": "Strange matter"
+  "block.multiverse.multivere_4368portalblock": "Strange matter",
+  "item.multiverse.themultiverse": "Themultiverse Portal Igniter"
 }

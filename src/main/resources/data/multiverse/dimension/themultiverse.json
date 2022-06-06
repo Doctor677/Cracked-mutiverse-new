@@ -1,34 +1,34 @@
 {
-  "type": "multiverse:galifray",
+  "type": "multiverse:themultiverse",
   "generator": {
     "type": "minecraft:noise",
-    "seed": 3797274314244314213,
+    "seed": 5819697900226499399,
     "biome_source": {
       "type": "minecraft:multi_noise",
-      "seed": 3797274314244314213,
+      "seed": 5819697900226499399,
       "temperature_noise": {
-        "firstOctave": -5.11,
+        "firstOctave": -6.58,
         "amplitudes": [
           2,
           2
         ]
       },
       "humidity_noise": {
-        "firstOctave": -5.11,
+        "firstOctave": -6.58,
         "amplitudes": [
           2,
           2
         ]
       },
       "altitude_noise": {
-        "firstOctave": -5.11,
+        "firstOctave": -6.58,
         "amplitudes": [
           2,
           2
         ]
       },
       "weirdness_noise": {
-        "firstOctave": -5.11,
+        "firstOctave": -6.58,
         "amplitudes": [
           2,
           2
@@ -36,19 +36,89 @@
       },
       "biomes": [
         {
-          "biome": "multiverse:galifraybiome",
+          "biome": "badlands",
           "parameters": {
-            "temperature": 0,
-            "humidity": 0,
-            "altitude": 0,
-            "weirdness": 0,
+            "temperature": 1,
+            "humidity": -1,
+            "altitude": 0.75,
+            "weirdness": -1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "bamboo_jungle",
+          "parameters": {
+            "temperature": 0.714285714286,
+            "humidity": -0.714285714286,
+            "altitude": -0.75,
+            "weirdness": 1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "bamboo_jungle_hills",
+          "parameters": {
+            "temperature": 0.428571428572,
+            "humidity": -0.428571428572,
+            "altitude": 0.75,
+            "weirdness": -1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "badlands_plateau",
+          "parameters": {
+            "temperature": 0.142857142858,
+            "humidity": -0.142857142858,
+            "altitude": -0.75,
+            "weirdness": 1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "beach",
+          "parameters": {
+            "temperature": -0.142857142858,
+            "humidity": 0.142857142858,
+            "altitude": 0.75,
+            "weirdness": -1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "birch_forest",
+          "parameters": {
+            "temperature": -0.428571428572,
+            "humidity": 0.428571428572,
+            "altitude": -0.75,
+            "weirdness": 1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "cold_ocean",
+          "parameters": {
+            "temperature": -0.714285714286,
+            "humidity": 0.714285714286,
+            "altitude": 0.75,
+            "weirdness": -1.5,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "birch_forest_hills",
+          "parameters": {
+            "temperature": -1,
+            "humidity": 1,
+            "altitude": -0.75,
+            "weirdness": 1.5,
             "offset": 0
           }
         }
       ]
     },
     "settings": {
-      "name": "multiverse:galifray",
+      "name": "multiverse:themultiverse",
       "bedrock_roof_position": -10,
       "bedrock_floor_position": 0,
       "sea_level": 63,

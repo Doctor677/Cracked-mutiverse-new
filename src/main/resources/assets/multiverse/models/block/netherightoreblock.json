@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "multiverse:blocks/nehteright_ore",
+    "up": "multiverse:blocks/nehteright_ore",
+    "north": "multiverse:blocks/nehteright_ore",
+    "east": "multiverse:blocks/nehteright_ore",
+    "south": "multiverse:blocks/nehteright_ore",
+    "west": "multiverse:blocks/nehteright_ore",
+    "particle": "multiverse:blocks/nehteright_ore"
+  }
+}
