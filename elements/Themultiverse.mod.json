@@ -57,7 +57,7 @@
       "value": "CUSTOM:Crakedmultiverse"
     },
     "texture": "igniter",
-    "portalTexture": "portal",
+    "portalTexture": "new_multiverse_portal",
     "enablePortal": true
   }
 }

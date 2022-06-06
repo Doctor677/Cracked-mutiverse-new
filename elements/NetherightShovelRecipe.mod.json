@@ -10,18 +10,6 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Multiverseingot"
-      },
-      {
-        "value": "CUSTOM:Multiverseingot"
-      },
-      {
-        "value": "CUSTOM:Multiverseingot"
-      },
-      {
-        "value": "CUSTOM:Multiverseingot"
-      },
-      {
         "value": ""
       },
       {
@@ -31,16 +19,28 @@
         "value": ""
       },
       {
-        "value": "Items.LEATHER"
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Crystalarmour.helmet"
+      "value": "CUSTOM:NetherightShovel"
     },
-    "name": "crystalamourcrafthelmet",
+    "name": "netheright_shovel_recipe",
     "namespace": "mod"
   }
 }

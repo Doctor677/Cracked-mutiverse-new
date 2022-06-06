@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "multiverse:blocks/portal",
-    "portal": "multiverse:blocks/portal"
+    "particle": "multiverse:blocks/new_multiverse_portal",
+    "portal": "multiverse:blocks/new_multiverse_portal"
   },
   "elements": [
     {

@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "012",
-    "3 5",
-    " 7 "
+    "01",
+    "23",
+    " 5"
   ],
   "key": {
     "0": {
@@ -16,17 +16,14 @@
       "item": "multiverse:multiverseingot"
     },
     "3": {
-      "item": "multiverse:multiverseingot"
+      "item": "minecraft:stick"
     },
     "5": {
-      "item": "multiverse:multiverseingot"
-    },
-    "7": {
-      "item": "minecraft:leather"
+      "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "multiverse:crystalarmour_helmet",
+    "item": "multiverse:netheright_axe",
     "count": 1
   }
 }

@@ -16,31 +16,31 @@
         "value": "CUSTOM:Multiverseingot"
       },
       {
-        "value": "CUSTOM:Multiverseingot"
-      },
-      {
-        "value": "CUSTOM:Multiverseingot"
+        "value": ""
       },
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:Multiverseingot"
+        "value": "Items.STICK"
       },
       {
         "value": ""
       },
       {
-        "value": "Items.LEATHER"
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Crystalarmour.helmet"
+      "value": "CUSTOM:NetherightHoe"
     },
-    "name": "crystalamourcrafthelmet",
+    "name": "netheright_hoe_recipe",
     "namespace": "mod"
   }
 }

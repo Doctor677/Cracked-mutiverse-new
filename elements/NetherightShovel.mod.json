@@ -1,0 +1,36 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "netheright_shovel",
+    "customModelName": "Normal",
+    "name": "Crystal Shovel",
+    "specialInfo": [
+      "Made from the strange crystals this tool bares the power of the multiverse"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Crakedmultiverse"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 5,
+    "efficiency": 6.0,
+    "attackSpeed": 1.0,
+    "enchantability": 14,
+    "damageVsEntity": 2.0,
+    "usageCount": 300,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Multiverseingot"
+      },
+      {
+        "value": "CUSTOM:NetherightShovel"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

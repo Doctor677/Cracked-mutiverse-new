@@ -10,16 +10,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Multiverseingot"
+        "value": ""
       },
       {
         "value": "CUSTOM:Multiverseingot"
       },
       {
-        "value": "CUSTOM:Multiverseingot"
-      },
-      {
-        "value": "CUSTOM:Multiverseingot"
+        "value": ""
       },
       {
         "value": ""
@@ -31,16 +28,19 @@
         "value": ""
       },
       {
-        "value": "Items.LEATHER"
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Crystalarmour.helmet"
+      "value": "CUSTOM:NetherightSword"
     },
-    "name": "crystalamourcrafthelmet",
+    "name": "netheright_sword_recipe",
     "namespace": "mod"
   }
 }

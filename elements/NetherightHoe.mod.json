@@ -1,0 +1,36 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "netheright_hoe",
+    "customModelName": "Normal",
+    "name": "Crytal Hoe",
+    "specialInfo": [
+      "Made from the strange crystals this tool bares the power of the multiverse"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Crakedmultiverse"
+    },
+    "toolType": "Hoe",
+    "harvestLevel": 4,
+    "efficiency": 6.0,
+    "attackSpeed": 1.0,
+    "enchantability": 14,
+    "damageVsEntity": 4.0,
+    "usageCount": 350,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "CUSTOM:NetherightHoe"
+      },
+      {
+        "value": "CUSTOM:Multiverseingot"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

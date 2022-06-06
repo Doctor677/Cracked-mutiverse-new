@@ -1,0 +1,36 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "netheright_axe",
+    "customModelName": "Normal",
+    "name": "Crystal Axe",
+    "specialInfo": [
+      "Made from the strange crystals this tool bares the power of the multiverse"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Crakedmultiverse"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 6,
+    "efficiency": 6.0,
+    "attackSpeed": 1.0,
+    "enchantability": 14,
+    "damageVsEntity": 9.0,
+    "usageCount": 600,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "CUSTOM:NetherightAxe"
+      },
+      {
+        "value": "CUSTOM:Multiverseingot"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

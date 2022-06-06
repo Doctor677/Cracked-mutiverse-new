@@ -182,6 +182,86 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "netherightoreblock"
+    },
+    {
+      "name": "NetherightPickaxe",
+      "type": "tool",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netheright_pickaxe"
+    },
+    {
+      "name": "NetherightAxe",
+      "type": "tool",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netheright_axe"
+    },
+    {
+      "name": "NetherightSword",
+      "type": "tool",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netheright_sword"
+    },
+    {
+      "name": "NetherightShovel",
+      "type": "tool",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netheright_shovel"
+    },
+    {
+      "name": "NetherightHoe",
+      "type": "tool",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netheright_hoe"
+    },
+    {
+      "name": "NetherightPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netheright_pickaxe_recipe"
+    },
+    {
+      "name": "NetherightAxeRecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netheright_axe_recipe"
+    },
+    {
+      "name": "NetherightSwordRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netheright_sword_recipe"
+    },
+    {
+      "name": "NetherightShovelRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netheright_shovel_recipe"
+    },
+    {
+      "name": "NetherightHoeRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netheright_hoe_recipe"
     }
   ],
   "variable_elements": [],
@@ -194,16 +274,21 @@
       "item.multiverse.galifray": "Galifray Portal Igniter",
       "item.multiverse.crystalarmour_chestplate": "Crystalarmour Body",
       "biome.multiverse.galifraybiome": "Galifraybiome",
+      "item.multiverse.netheright_pickaxe": "Crystal Pickaxe",
       "item.multiverse.multiverseingot": "Mysterious Crystal",
       "item.multiverse.crystalarmour_boots": "Crystalarmour Boots",
       "item.multiverse.corrputedplayer_spawn_egg": "Corrputed player Spawn Egg",
+      "item.multiverse.netheright_axe": "Crystal Axe",
       "block.multiverse.multiverseblock": "Multiverse breaker",
       "itemGroup.tabcrakedmultiverse": "Crakedmultiverse",
       "block.multiverse.netherightoreblock": "netherite ore",
+      "item.multiverse.netheright_shovel": "Crystal Shovel",
       "item.multiverse.crystalarmour_helmet": "Crystalarmour Helmet",
       "entity.multiverse.corrputedplayer": "Corrputed player",
+      "item.multiverse.netheright_sword": "Crystal Sword",
       "biome.multiverse.universe_4368": "Universe 4368",
       "biome.multiverse.universe_43682": "Universe 4 3 6 8 2",
+      "item.multiverse.netheright_hoe": "Crytal Hoe",
       "block.multiverse.multivere_4368portalblock": "Strange matter",
       "item.multiverse.themultiverse": "Themultiverse Portal Igniter"
     }
